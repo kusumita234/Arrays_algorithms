@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class FindMinimumValue {
     
-    public static int findMinimumValue ( int [] arr){
+    public static int findMinimum ( int [] arr){
         if ( arr ==null || arr.length == 0) {
             return -1;
         }
@@ -28,7 +28,7 @@ public class FindMinimumValue {
             System.out.print((i+1) + ".\tInput List: ");
             System.out.println(Arrays.toString(inputs[i]));
 
-            System.out.println("\n\tMinimum Value: " + findMinimumValue(inputs[i]));
+            System.out.println("\n\tMinimum Value: " + findMinimum(inputs[i]));
             System.out.println(new String (new char[100]).replace('\0', '-'));
         }
     }
